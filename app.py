@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def pagina_inicial():
-    return "FIAP MBA Arquitetura de Soluções Grupo 18"
+    return "Bem Vindo ao MBA Arquitetura de Soluções da FIAP - Grupo 18"
 
 if __name__ == '__main__':
     app.run()
