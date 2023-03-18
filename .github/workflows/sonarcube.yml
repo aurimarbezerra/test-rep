@@ -1,7 +1,0 @@
-# Nome do Workflow
-name: Quality Gate
-
-- name: SonarQube Quality Gate check
-  uses: sonarsource/sonarqube-quality-gate-action@master
-  with:
-    scanMetadataReportFile: target/sonar/report-task.txt
