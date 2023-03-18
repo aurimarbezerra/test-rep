@@ -1,0 +1,18 @@
+# Nome do Workflow
+name: Quality Gate
+
+
+# Evento que irá acionar a pipeline
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SonarQube Quality Gate check
+        uses: sonarsource/sonarqube-quality-gate-action@master
+        with:
+          scanMetadataReportFile: target/sonar/report-task.txt
