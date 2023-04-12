@@ -9,7 +9,7 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def pagina_inicial():
-    return "Bem Vindo ao MBA Arquitetura de Soluções da FIAP - Grupo 18"
+    return "Olá Sejam Bem Vindo ao MBA Arquitetura de Soluções da FIAP - Grupo 18"
 
 if __name__ == '__main__':
     port = os.getenv('PORT')
